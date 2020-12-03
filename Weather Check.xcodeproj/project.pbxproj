@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		698B829B25717FA200D3D871 /* WeatherAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698B829A25717FA200D3D871 /* WeatherAPI.swift */; };
+		698B829E257181F100D3D871 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698B829D257181F100D3D871 /* Extensions.swift */; };
+		698B82A12571833300D3D871 /* NetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698B82A02571833300D3D871 /* NetService.swift */; };
 		69B0350325714A4500092928 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B0350225714A4500092928 /* AppDelegate.swift */; };
 		69B0350525714A4500092928 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B0350425714A4500092928 /* SceneDelegate.swift */; };
 		69B0350725714A4500092928 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B0350625714A4500092928 /* ViewController.swift */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		698B829A25717FA200D3D871 /* WeatherAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAPI.swift; sourceTree = "<group>"; };
+		698B829D257181F100D3D871 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		698B82A02571833300D3D871 /* NetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetService.swift; sourceTree = "<group>"; };
 		69B034FF25714A4500092928 /* Weather Check.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Weather Check.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		69B0350225714A4500092928 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		69B0350425714A4500092928 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,15 +62,50 @@
 		69B0350125714A4500092928 /* Weather Check */ = {
 			isa = PBXGroup;
 			children = (
+				69B0351B25714A8200092928 /* Services */,
+				69B0351A25714A7B00092928 /* Controllers */,
+				69B0351925714A7400092928 /* Views */,
+				69B0351825714A6C00092928 /* Models */,
 				69B0350225714A4500092928 /* AppDelegate.swift */,
 				69B0350425714A4500092928 /* SceneDelegate.swift */,
-				69B0350625714A4500092928 /* ViewController.swift */,
 				69B0350825714A4500092928 /* Main.storyboard */,
 				69B0350B25714A4900092928 /* Assets.xcassets */,
 				69B0350D25714A4900092928 /* LaunchScreen.storyboard */,
 				69B0351025714A4A00092928 /* Info.plist */,
 			);
 			path = "Weather Check";
+			sourceTree = "<group>";
+		};
+		69B0351825714A6C00092928 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				698B829A25717FA200D3D871 /* WeatherAPI.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		69B0351925714A7400092928 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		69B0351A25714A7B00092928 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				69B0350625714A4500092928 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		69B0351B25714A8200092928 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				698B829D257181F100D3D871 /* Extensions.swift */,
+				698B82A02571833300D3D871 /* NetService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +179,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				69B0350725714A4500092928 /* ViewController.swift in Sources */,
+				698B829E257181F100D3D871 /* Extensions.swift in Sources */,
+				698B82A12571833300D3D871 /* NetService.swift in Sources */,
 				69B0350325714A4500092928 /* AppDelegate.swift in Sources */,
+				698B829B25717FA200D3D871 /* WeatherAPI.swift in Sources */,
 				69B0350525714A4500092928 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
